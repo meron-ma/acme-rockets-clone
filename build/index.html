@@ -15,9 +15,12 @@
         </h1>
         <button
           id="humberger-btn"
-          class="text-3xl font-medium md:hidden cursor-pointer"
+          class="text-3xl font-medium md:hidden relative cursor-pointer w-8 h-8"
         >
-          &#9776;
+          <div
+            class="bg-white w-8 h-1 rounded transition-all duration-500 absolute top-4 -mt-0.5 before:content-[''] before:bg-white before:w-8 before:h-1 before:rounded before:-translate-y-3 before:absolute before:-translate-x-4 after:content-[''] after:bg-white after:w-8 after:h-1 after:rounded after:translate-y-3 after:absolute after:-translate-x-4"
+          ></div>
+          <!-- &#9776; -->
         </button>
         <nav class="hidden space-x-8 text-xl md:block" aria-label="main">
           <a href="#rockets" class="hover:opacity-90">Our Rockets</a>
@@ -27,9 +30,9 @@
       </section>
       <section
         id="mobile-menu"
-        class="bg-black hidden flex-col items-center px-6 absolute top-0 w-full justify-center text-5xl animate-open-menu origin-top"
+        class="bg-black hidden flex-col items-center px-6 absolute top-68 w-full justify-center text-5xl animate-open-menu origin-top"
       >
-        <button class="text-8xl self-end">&times;</button>
+        <!-- <button class="text-8xl self-end">&times;</button> -->
         <nav class="py-8 flex flex-col items-center text-center min-h-screen">
           <a href="#hero" class="hover:opacity-90 w-full py-6">Home</a>
           <a href="#rockets" class="hover:opacity-90 w-full py-6"
